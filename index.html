@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rover Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h1>Security Rover</h1>
+  <div id="status"></div>
+  <div>
+    <button onclick="setMode('patrol')">Patrol</button>
+    <button onclick="setMode('guard')">Guard</button>
+    <button onclick="setMode('follow')">Follow</button>
+    <button onclick="setMode('investigate')">Investigate</button>
+    <button onclick="setMode('return_home')">Return Home</button>
+  </div>
+  <div>
+    <img id="stream" src="http://ROVER_IP:5000/stream" width="480">
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
